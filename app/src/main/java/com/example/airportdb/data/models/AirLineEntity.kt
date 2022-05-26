@@ -1,10 +1,12 @@
 package com.example.airportdb.data.models
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity
 data class AirLineEntity(
-    val id_air_lane:Int=0,
+    @PrimaryKey(autoGenerate = true)
+    val id_airLine:Int=0,
     val name:String=""
 )
 
